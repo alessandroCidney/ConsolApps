@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\DayList\\DayList.csproj": {}
+    "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\DayList\\DayList.csproj": {
+    "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\DayList\\DayList.csproj",
-        "projectName": "DayList",
-        "projectPath": "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\DayList\\DayList.csproj",
+        "projectUniqueName": "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\Calculator\\Calculator.csproj",
+        "projectName": "Calculator",
+        "projectPath": "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\Fabinho\\.nuget\\packages\\",
-        "outputPath": "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\DayList\\obj\\",
+        "outputPath": "D:\\Fabinho\\Documents\\Coisas de Sandrinho\\Programação\\repositorios\\CSConsoleAplications\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Fabinho\\AppData\\Roaming\\NuGet\\NuGet.Config"
