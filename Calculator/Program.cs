@@ -18,7 +18,9 @@ namespace Calculator
             Console.WriteLine("-------------------");
             Console.WriteLine("Opções");
             Console.WriteLine("1 - Somar");
-            Console.WriteLine("2 - Multiplicação");
+            Console.WriteLine("2 - Diferença");
+            Console.WriteLine("3 - Multiplicação");
+            Console.WriteLine("4 - Divisão");
             Console.WriteLine("X - Sair");
             Console.WriteLine("");
 
@@ -38,7 +40,15 @@ namespace Calculator
                         break;
 
                     case "2":
+                        Diferenca();
+                        break;
+
+                    case "3":
                         Multiplicacao();
+                        break;
+
+                    case "4":
+                        Divisao();
                         break;
 
                     default:
@@ -89,6 +99,50 @@ namespace Calculator
                 {
                     Console.WriteLine("");
                     Console.WriteLine($"O resultado da operação vale {numberOne*numberTwo}");
+                }
+            }
+            else
+            {
+                throw new ArgumentException("O valor deve ser um número!");
+            } 
+        }
+
+        private static void Diferenca()
+        {
+            Console.Write("");
+            Console.WriteLine("Digite o primeiro número:");
+
+            if (decimal.TryParse(Console.ReadLine(), out decimal numberOne))
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Digite o segundo número:");
+
+                if(decimal.TryParse(Console.ReadLine(), out decimal numberTwo))
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine($"O resultado da operação vale {numberOne-numberTwo}");
+                }
+            }
+            else
+            {
+                throw new ArgumentException("O valor deve ser um número!");
+            } 
+        }
+
+        private static void Divisao()
+        {
+            Console.Write("");
+            Console.WriteLine("Digite o primeiro número:");
+
+            if (decimal.TryParse(Console.ReadLine(), out decimal numberOne))
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Digite o segundo número:");
+
+                if(decimal.TryParse(Console.ReadLine(), out decimal numberTwo))
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine($"O resultado da operação vale {numberOne/numberTwo}");
                 }
             }
             else
