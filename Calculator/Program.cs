@@ -18,6 +18,7 @@ namespace Calculator
             Console.WriteLine("-------------------");
             Console.WriteLine("Opções");
             Console.WriteLine("1 - Somar");
+            Console.WriteLine("2 - Multiplicação");
             Console.WriteLine("X - Sair");
             Console.WriteLine("");
 
@@ -34,6 +35,10 @@ namespace Calculator
                 {
                     case "1":
                         Soma();
+                        break;
+
+                    case "2":
+                        Multiplicacao();
                         break;
 
                     default:
@@ -57,7 +62,7 @@ namespace Calculator
             {
                 Console.WriteLine("");
                 Console.WriteLine("Digite o segundo número:");
-                
+
                 if(decimal.TryParse(Console.ReadLine(), out decimal numberTwo))
                 {
                     Console.WriteLine("");
@@ -68,6 +73,28 @@ namespace Calculator
             {
                 throw new ArgumentException("O valor deve ser um número!");
             }
+        }
+
+        private static void Multiplicacao()
+        {
+            Console.Write("");
+            Console.WriteLine("Digite o primeiro número:");
+
+            if (decimal.TryParse(Console.ReadLine(), out decimal numberOne))
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Digite o segundo número:");
+
+                if(decimal.TryParse(Console.ReadLine(), out decimal numberTwo))
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine($"O resultado da operação vale {numberOne*numberTwo}");
+                }
+            }
+            else
+            {
+                throw new ArgumentException("O valor deve ser um número!");
+            } 
         }
     }
 }
